@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.service.Mapper">
+    <!--根据customer的id 搜索-->
+    <select id="selectCustomer" resultType="cn.entity.Customer">
+        select * from customer where c_id = #{c_id}
+    </select>
+
+    <select id="selectManager" resultType="cn.entity.Manager">
+        select * from manager where m_id = #{m_id}
+    </select>
+</mapper>
+
